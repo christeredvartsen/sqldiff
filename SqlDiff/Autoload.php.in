@@ -53,7 +53,7 @@ class SqlDiff_Autoload {
      *
      * @param string $class The name of the class to load
      */
-    static function load($class) {
+    static public function load($class) {
         $className = strtolower($class);
 
         if (isset(static::$classes[$className])) {
