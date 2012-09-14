@@ -145,4 +145,14 @@ abstract class Index {
 
         return $this;
     }
+
+	/**
+	 * Support for (string) typecasting
+	 *
+	 * @return string
+	 */
+	public function __toString()
+	{
+		return $this->getName();
+	}
 }
