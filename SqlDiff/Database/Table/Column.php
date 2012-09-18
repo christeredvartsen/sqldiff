@@ -263,15 +263,12 @@ abstract class Column {
         return null;
     }
 
-	/**
-	 * Support for (string) typecasting
-	 *
-	 * @return string
-	 */
-	public function __toString()
-	{
-		return $this->getName();
-	}
-
-
+    /**
+     * Support for (string) typecasting
+     *
+     * @return string
+     */
+    public function __toString() {
+        return $this->getName();
+    }
 }
